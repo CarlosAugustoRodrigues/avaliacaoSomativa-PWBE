@@ -10,7 +10,7 @@ CREATE TABLE Cliente (
 CREATE TABLE Telefone (
     cpf VARCHAR(14),
     numero VARCHAR(15) NOT NULL UNIQUE,
-    foreign key (cpf) references Cliente(cpf) ON DELETE CASCADE
+    foreign key (cpf) references Cliente(cpf) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE Veiculo (
